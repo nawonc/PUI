@@ -12,7 +12,10 @@
         var animal = generateRandomAnimal();
         $("img").attr("src", animal.image);
         console.log(animal.type);
-        $("#animal-type").attr()
+        $("#animal-type").text(animal.type);
+        $("#animal-name").text(animal.name);
+        $("#animal-age").text(animal.age);
+        $("#")
     });
     </script>
 </head>
@@ -21,7 +24,9 @@
     <div class="img-holder">
         <img id="animal-img" src="#">
     </div>
-    <h3 id="animal-type"></h3>
+    <h3>Animal Type: <span id="animal-type"></span></h3>
+    <h3>Name: <span id="animal-name"></span></h3>
+    <h3>Age: <span id="animal-age"></span></h3>
 
 </body>
 </html>
