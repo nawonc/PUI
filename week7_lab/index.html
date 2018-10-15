@@ -6,9 +6,22 @@
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var animal = generateRandomAnimal();
+        $("img").attr("src", animal.image);
+        console.log(animal.type);
+        $("#animal-type").attr()
+    });
+    </script>
 </head>
 
 <body>
+    <div class="img-holder">
+        <img id="animal-img" src="#">
+    </div>
+    <h3 id="animal-type"></h3>
 
 </body>
 </html>

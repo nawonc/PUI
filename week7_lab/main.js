@@ -37,5 +37,23 @@ function generateRandomName() {
 }
 
 function generateRandomAge() {
-  generateRandomIndex(maxIndex)
+  maxAge = 20;
+  age = generateRandomIndex(maxAge);
+  return age;
 }
+
+function generateRandomAnimal() {
+  index = generateRandomIndex(animal.length);
+  randomAnimal = animal[index];
+  if (randomAnimal instanceof Chicken)
+    return new Chicken(generateRandomName(), generateRandomAge());
+  if (randomAnimal instanceof Turtle)
+    return new Turtle(generateRandomName(), generateRandomAge());
+  else
+    return new Dog(generateRandomName(), generateRandomAge());
+}
+
+// $(document).ready(function() {
+//   var animal = generateRandomAnimal();
+//   $("img").attr(animal.image);
+// });
