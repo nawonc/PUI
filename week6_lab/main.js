@@ -56,6 +56,6 @@ $(document).ready(function(){
         } else {
             $(input).css('textDecoration', 'none');
         }
-    })    
+    })
 
 });

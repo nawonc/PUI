@@ -181,7 +181,12 @@ html, body {
 }
 
 #glut-img {
-  margin-top: 15px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#pump-img {
+  margin-top: 10%;
 }
 
 .product-name {
@@ -239,13 +244,24 @@ html, body {
   margin-bottom: 10px;
 }
 
+.glazes input {
+  margin-right: 17px;
+  margin-left: 17px;
+  margin-bottom: 7px;
+}
+
 .dot {
   height: 25px;
   width: 25px;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.glazes p {
+  font-size: 9px;
 }
 
 .none {
@@ -253,7 +269,10 @@ html, body {
 }
 
 .sugar {
-  background-color: #dddddd;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b2b2b2;
 }
 
 .vanilla {
@@ -288,3 +307,37 @@ html, body {
 .shown {
   border: 3px solid #fff;
 }
+
+/*CART PAGE*/
+
+.cart-items {
+  width: 60%;
+  display: inline-block;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 2.5%;
+  padding-top: 50px;
+  font-family: Avenir;
+  margin: 0;
+}
+
+.order-summary {
+  width: 15%;
+  display: inline-block;
+  position: relative;
+  padding-left: 2.5%;
+  padding-right: 10%;
+  padding-top: 50px;
+  font-family: Avenir;
+}
+
+#my-cart th {
+  /*padding-left: 10%;*/
+  /*padding-right: 10%;*/
+  width: 5%;
+}
+
+#my-cart td {
+  width: 5%;
+}
+
